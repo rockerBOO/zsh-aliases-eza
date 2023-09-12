@@ -1,4 +1,4 @@
-# zsh-aliases-exa
+# zsh-aliases-eza
 
 ## Purpose
 
