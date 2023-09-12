@@ -2,22 +2,22 @@
 
 ## Purpose
 
-This zsh plugin enables a number of aliases extending `exa`, the modern replacement for `ls`.
+This zsh plugin enables a number of aliases extending `eza`, the modern replacement for `ls`.
 
 ## Use
 
-To use it, you should first install [`exa`](https://the.exa.website). You can do so easily using [Homebrew](https://brew.sh) on the Mac:
+To use it, you should first install [`eza`]([https://the.exa.website](https://github.com/eza-community/eza)). You can do so easily using [Homebrew](https://brew.sh) on the Mac:
 
 ```bash
-brew install exa
+brew install eza
 ```
 
 Next, download this repo into your custom plugins directory. For my installation using [Oh My Zsh](https://ohmyz.sh/), I cloned the repo to `~/.oh-my-zsh/custom/plugins`.
 
-Lastly, add `zsh-aliases-exa` to the plugins array of your zshrc file:
+Lastly, add `zsh-aliases-eza` to the plugins array of your zshrc file:
 
 ```bash
-plugins=(... zsh-aliases-exa)
+plugins=(... zsh-aliases-eza)
 ```
 
 Restart your zsh session, and the aliases will be available.
@@ -26,16 +26,16 @@ Restart your zsh session, and the aliases will be available.
 
 ```bash
 # general use
-alias ls='exa'                                                          # ls
-alias l='exa -lbF --git'                                                # list, size, type, git
-alias ll='exa -lbGF --git'                                             # long list
-alias llm='exa -lbGd --git --sort=modified'                            # long list, modified date sort
-alias la='exa -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
-alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias ls='eza'                                                          # ls
+alias l='eza -lbF --git'                                                # list, size, type, git
+alias ll='eza -lbGF --git'                                             # long list
+alias llm='eza -lbGd --git --sort=modified'                            # long list, modified date sort
+alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
+alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 
 # specialty views
-alias lS='exa -1'                                                              # one column, just names
-alias lt='exa --tree --level=2'                                         # tree
+alias lS='eza -1'                                                              # one column, just names
+alias lt='eza --tree --level=2'                                         # tree
 
 ```
 
@@ -48,7 +48,7 @@ alias lt='exa --tree --level=2'                                         # tree
   2. date format
   3. alias profiles
   4. including git column
-* Create function to configure different profiles of aliases, so that different alias groups can be enabled. For example, one profile may be for replacing `ls`, another may leave those commands alone and use ones based on `exa` only.
+* Create function to configure different profiles of aliases, so that different alias groups can be enabled. For example, one profile may be for replacing `ls`, another may leave those commands alone and use ones based on `eza` only.
 
 ## Thanks
 
