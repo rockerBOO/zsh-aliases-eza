@@ -52,8 +52,9 @@ alias lt='eza --tree --level=2'                                         # tree
 
 ## Thanks
 
-Big thanks to Oh My Zsh, Homebrew, and Exa for these terrific tools. They have made the command line fun again.
+Big thanks to Oh My Zsh, Homebrew, and Exa/Eza for these terrific tools. They have made the command line fun again.
 
 ## Contributors
 
 * [Darrin Tisdale](https://github.com/darrintisdale)
+* [Dave Lage](https://github.com/rockerBOO)
